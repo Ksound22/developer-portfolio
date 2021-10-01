@@ -10,11 +10,11 @@ A portfolio website template for campers
 
 ## Github repo
 
-This is the [link](https://github.com/Ksound22/ebook-portfolio) to the Github repo of the project
+This is the [link](https://github.com/Ksound22/developer-portfolio) to the Github repo of the project
 
 ## Sample Website
 
-A sample is already available via this [link](https://eager-williams-af0d00.netlify.app/?)
+A live demo is already available via this [link](https://eager-williams-af0d00.netlify.app/?)
 
 ## Tech Stack
 
