@@ -56,7 +56,7 @@ section {
 /* CSS Resets end */
 
 /* Navbar */
-/* nav {
+nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -98,7 +98,7 @@ nav ul li {
   background-color: transparent;
   cursor: pointer;
   display: none;
-} */
+}
 /* Navbar ends */
 
 /* Hero section */
@@ -141,6 +141,7 @@ nav ul li {
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
+  text-align: center;
 }
 
 .more-about p {
@@ -178,6 +179,11 @@ nav ul li {
   margin-top: 2rem;
 }
 
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
 .projects-container {
   display: flex;
   align-items: center;
@@ -207,10 +213,6 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
-.project-pic {
-  width: 65%;
-  height: 60%;
-}
 /* Projects section ends */
 
 /* Contacts section */
@@ -349,10 +351,6 @@ footer {
     transition: transform 0.5s ease-in;
   }
 
-  nav ul.show {
-    transform: translateX(0);
-  }
-
   nav ul li {
     margin: 8px;
   }
@@ -361,20 +359,24 @@ footer {
     display: block;
   }
 
+  nav ul.show {
+    transform: translateX(0);
+  }
+
   .hero {
     margin-top: -4rem;
     flex-direction: column;
     gap: 0;
   }
 
-  .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
-  }
-
   .hero img {
     height: 37.5rem;
     width: 30rem;
+  }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
   }
 
   .more-about {
