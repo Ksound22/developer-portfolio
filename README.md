@@ -1,4 +1,4 @@
-# EBOOK PORTFOLIO
+# DEVELOPER PORTFOLIO
 
 A portfolio website template for campers
 
