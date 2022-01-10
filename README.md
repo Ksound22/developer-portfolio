@@ -12,6 +12,8 @@ A portfolio website template for campers
 
 This is the [link](https://github.com/Ksound22/developer-portfolio) to the Github repo of the project
 
+Forked his repository and made it my own
+
 ## Sample Website
 
 A live demo is already available via this [link](https://eager-williams-af0d00.netlify.app/?)
