@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Berkshire+Swash&family=Laila&family=Saira+Extra+Condensed:wght@500&display=swap');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "mosk";
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --bg-color: white;
+  --primary-color: #dd8c4a;
+  --secondary-color:  #BAB86C;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -17,7 +17,9 @@
   --transition: 0.3s;
 }
 /* Variables end */
-
+body{
+  background-color: white;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -55,6 +57,17 @@ section {
 /* CSS Resets end */
 
 /* Navbar */
+.logo-image img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: visible;
+  margin-top: -6px;
+  display: inline-flex;
+  padding-right: 10px;
+}
+
+
 nav {
   position: sticky;
   top: 0;
@@ -62,14 +75,15 @@ nav {
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-color: #D3D3D3;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
   color: var(--primary-color);
+  display: inline-flex;
 }
 
 nav a {
@@ -114,6 +128,14 @@ nav ul li {
   height: 37.5rem;
   width: 37.5rem;
 }
+.bio-title {
+  font-family: 'Amita', cursive;
+  color: orange;
+  font-size: 2rem;
+}
+.bio-text {
+  font-family: 'Laila', sans-serif;
+}
 
 .bio {
   width: 25rem;
@@ -141,11 +163,15 @@ nav ul li {
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  color: orange;
+  font-size: 3.5rem;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  font-family: 'Laila', sans-serif;
 }
 /* More about ends */
 
@@ -159,6 +185,9 @@ nav ul li {
 
 .skill-header {
   margin-bottom: 1rem;
+  font-family: 'Berkshire Swash', cursive;
+  color: orange;
+  font-size: 3rem;
 }
 
 .skills-wrapper img {
@@ -192,6 +221,9 @@ nav ul li {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  font-family: 'Berkshire Swash', cursive;
+  color: orange;
+  font-size: 2rem;
 }
 
 .project-container {
@@ -222,6 +254,9 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  font-family: 'Berkshire Swash', cursive;
+  color: orange;
+  font-size: 3rem;
 }
 
 .contact-form-container {
@@ -288,8 +323,9 @@ nav ul li {
 }
 
 .socicon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: #D3D3D3 ;
 }
 /* Social button ends */
 

@@ -1,0 +1,32 @@
+Free Bootstrap Resume/CV Template for developers
+
+Theme name:
+=======================================================================
+Orbit
+
+Theme version:
+=======================================================================
+Bootstrap 5 v1.0
+
+Release Date:
+=======================================================================
+2021-07-19
+
+Author: 
+=======================================================================
+Xiaoying Riley at 3rd Wave Media (https://themes.3rdwavemedia.com/)
+
+Contact:
+=======================================================================
+Web: https://themes.3rdwavemedia.com/
+Email: themes@3rdwavemedia.com
+Twitter: @3rdwave_themes
+
+License: 
+=======================================================================
+This template is 100% FREE as long as you keep the footer attribution link. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work.
+
+If you’d like to use this template without the footer attribution link, you can buy the commercial license - https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/
+
+
+
