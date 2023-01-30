@@ -10,7 +10,7 @@ Super Creator
 
 ## Github repo
 
-This is the [link](https://github.com/Ksound22/developer-portfolio) to the Github repo of the project
+This is the [link](https://github.com/solo0805/my-portfolio) to the Github repo of the project
 
 ## Sample Website
 
