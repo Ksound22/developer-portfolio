@@ -6,7 +6,7 @@ A portfolio website template for campers
 
 ## Author
 
-[@koladechris](https://www.twitter.com/koladechris)
+Super Creator
 
 ## Github repo
 
