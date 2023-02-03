@@ -6,7 +6,7 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  --bg-color: #faf9f8;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
@@ -47,38 +47,38 @@ body {
   font-family: var(--font-family);
 }
 
-section {
-  /* max-width: 1100px;
-  margin: auto; */
-}
-
 /* CSS Resets end */
 
 /* Navbar */
 nav {
   position: sticky;
+  z-index: 0;
   top: 0;
   left: 0;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: #282b3e;
+  border-bottom: 0.5rem solid #f14546;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-  color: var(--primary-color);
+  font-size: 100px;
+  font-family: 'Bebas Neue', cursive;
+  color: #faf9f8;
 }
 
 nav a {
-  color: var(--primary-color);
-  transition: var(--transition);
+  font-size: 20px;
+  color: #faf9f8;
 }
 nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  transition: var(--transition);
+  text-decoration: none;
+  color: #f14546;
 }
 
 nav ul {
@@ -102,80 +102,129 @@ nav ul li {
 
 /* Hero section */
 .hero {
+  position: relative;
+  z-index: 1;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 68.75rem;
+  max-width: auto;
   margin: auto;
 }
 
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+.hero-img {
+  width: 27.5rem;
+}
+
+@keyframes bubbles {
+  0% {
+    transform: translate(-80%, 250%);
+  }
+  100% {
+    transform: translate(900%, 100%);
+  }
+}
+
+#Bubbles {
+  height: 10rem;
+  animation-name: bubbles;
+  animation-iteration-count: infinite;
+  animation-duration: 3.5s;
 }
 
 .bio {
-  width: 25rem;
-  padding: 0.625rem;
+  font-family: 'Bebas Neue', cursive;
+  text-align: right;
+  height: 10rem;
+  width: auto;
+  padding: 2rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  border: 1px solid #282B3E;
 }
 
-.bio h1 {
+.bio h2 {
+  padding: 0.2rem;
   margin-bottom: var(--bottom-margin);
 }
 
 .bio p {
+  font-family: 'Old Standard TT', serif;
   line-height: var(--line-height);
-  padding: 0.3rem 0;
+  padding: 0.2rem;
 }
 /* Hero section ends */
 
 /* More about */
 .more-about {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  font-family: 'Old Standard TT', serif;
+  position: relative;
+  z-index: 1;
+  background-color: #ededed;
+  padding: 2.5rem;
 }
 
 .more-about h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin-top: .3rem;
+  text-align: left;
 }
 
 .more-about p {
+  text-align: left;
   line-height: var(--line-height);
-  padding: 0.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 /* More about ends */
 
 /* Skills section */
 .skills {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
+  transform: skewY(-2deg);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.35rem;
+  color: #FAF9F8;
+  position: relative;
+  z-index: 2;
+  background-color: #282B3E;
+  max-width: auto;
+  padding: 3rem;
+  margin-top: -2rem;
 }
 
 .skill-header {
+  transform: skewY(2deg);
   margin-bottom: 1rem;
 }
 
+.skills-wrapper{
+  transform: skewY(2deg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .skills-wrapper img {
-  padding: 1.25rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 7.875rem;
 }
 /* Skills section ends */
 
 /* Projects section */
 .projects {
-  background-color: var(--bg-color);
-  padding: 32px 0;
-  margin-top: 2rem;
+  padding: 3rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.35rem;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  margin-top: -2rem;
+  padding-top: 4rem;
 }
 
 .project-pic {
@@ -190,8 +239,8 @@ nav ul li {
 }
 
 .projects-title {
-  text-align: center;
-  margin-bottom: 1rem;
+  text-align: left;
+  padding-top: 2rem;
 }
 
 .project-container {
@@ -216,7 +265,10 @@ nav ul li {
 
 /* Contacts section */
 .contact {
-  margin-top: 2rem;
+  position: relative;
+  z-index: 5;
+  padding: 2rem;
+  background-color: #ededed;
 }
 
 .contact h2 {
@@ -225,31 +277,32 @@ nav ul li {
 }
 
 .contact-form-container {
+  position: relative;
+  z-index: 5;
   max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 
 .contact-form-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
 }
 
 .contact-form-container textarea {
+  z-index: 5;
   min-height: 6.25rem;
   font-size: 14px;
 }
 
 .contact-form-container .input-field {
+  background-color: #faf9f800;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;
   border: none;
-  border: 2px outset var(--primary-color);
+  border-bottom: 3px solid black;
   font-size: 0.875rem;
   outline: none;
 }
@@ -276,22 +329,36 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
+.airplane {
+  z-index: 1;
+  height: 10rem;
+  margin-top: -25rem;
+  animation-name: message_lr;
+  animation-iteration-count: 3;
+  animation-duration: 2s, 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes message_lr {
+  0% {
+    transform: translate(-50%, 250%);
+  }
+  100% {
+    transform: translate(900%, 100%);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform:rotateZ(0);
+  }
+  100% {
+    transform:rotateZ(100);
+  }
+}
+
 /* Contacts section ends */
-
-/* Social buttons */
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
-}
-
-.socicon {
-  width: 2rem;
-  height: 2rem;
-}
-/* Social button ends */
 
 /* Scroll to top button */
 .scroll-up {
@@ -307,22 +374,21 @@ nav ul li {
 }
 /* Scroll to top button ends */
 
-/* Footer section */
-footer {
-  background-color: var(--bg-color);
-  padding: 1.25rem;
-  text-align: center;
-  margin: 2rem 0 0;
-}
-/* Footer section ends */
-
 /* General (utilities) */
 .icon-card {
   background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  border-radius: 5px;
+  border: #fff 1px solid;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
+}
+
+.icon-card:hover {
+  transform: rotateY(-1deg);
+  transition-duration: 1s;
+  background-color: rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0) 1px solid;
+  cursor:default;
 }
 
 .project-card {
@@ -363,23 +429,25 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
-    flex-direction: column;
-    gap: 0;
+    margin-top: 4rem;
+    flex-direction: row;
   }
 
-  .hero img {
-    height: 37.5rem;
-    width: 30rem;
+  .hero-img {
+    gap: 0;
+    height: 20.5rem;
+    width: 20.5rem;
   }
 
   .bio {
     margin-top: -7rem;
     width: 20.5rem;
+    border-bottom: #4756df 1px solid;
   }
 
   .more-about {
-    margin-top: 2rem;
+    border-top: rgb(0, 0, 0) 1px solid;
+    padding-top: 2rem;
     padding: 1rem 3.5rem;
   }
 
@@ -392,8 +460,8 @@ footer {
   }
 
   .icon {
-    width: 5.875rem;
-    height: 5.25rem;
+    width: 6.25rem;
+    height: 6.25rem;
   }
 
   .projects-container {
@@ -406,13 +474,19 @@ footer {
 
   .contact-form-container {
     max-width: 23.75rem;
+    background-color: white;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+
+  .hero {
+    margin-top: 40rem;
+    flex-direction: column;
+  }
+
+  .hero-img {
+    width: 1rem;
   }
 
   .bio {
@@ -425,5 +499,27 @@ footer {
 
   .contact-form-container {
     max-width: 17.75rem;
+    background-color: white;
   }
 }
+
+/* Footer section */
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: 13.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 6.5rem 0.5rem 6.5rem;
+  background-color: #282b3e;
+  border-top: 10px solid #f14546;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-img {
+  max-height: 15rem;
+  max-width: 15rem;
+}
+/* Footer section ends */
