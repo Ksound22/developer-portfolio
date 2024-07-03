@@ -6,6 +6,7 @@ A portfolio website template for campers
 
 ## Author
 
+[Edson Rios](https://www.linkedin.com/in/edson-rios-7013051a2/) edited for personal use.
 [@koladechris](https://www.twitter.com/koladechris)
 
 ## Github repo
